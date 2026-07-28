@@ -24,30 +24,42 @@
         font-size: 40px;
         margin: 0;
       }
+
       .dictionary-section {
         margin-top: 50px;
         text-align: left;
-        width: 60%;
+        width: 70%;
         margin-left: auto;
         margin-right: auto;
         background: white;
         padding: 20px;
         border-radius: 10px;
       }
-      .dictionary-section h2 {
-        margin-top: 30px;
-        font-size: 28px;
+
+      .entry {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 30px;
       }
+
+      .entry img {
+        width: 150px;
+        height: auto;
+        border-radius: 10px;
+      }
+
+      .entry-text {
+        flex: 1;
+      }
+
+      .dictionary-section h2 {
+        font-size: 28px;
+        margin-top: 30px;
+      }
+
       .dictionary-section p {
         font-size: 18px;
-      }
-      .entry-image {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 200px;
-        border-radius: 10px;
-        margin-bottom: 15px;
       }
     </style>
   </head>
@@ -62,24 +74,34 @@
     <div class="dictionary-section">
       <h2>D</h2>
 
-      <img src="image2.png" class="entry-image" alt="DaFudgeFelix image">
-
-      <p><strong>DaFudge!?Felix!</strong> — A complete self‑version of Georgian creator 
-      <em>DaFuqBoom</em>, whose channel is now called “Skibidi”, where he is known for 
-      producing the “Skibidi Toilet” series. The name is used on Felix Willmott’s second 
-      channel for scrapped or experimental videos.</p>
+      <div class="entry">
+        <img src="image2.png" alt="DaFudgeFelix image">
+        <div class="entry-text">
+          <p><strong>DaFudge!?Felix!</strong> — A complete self‑version of Georgian creator 
+          <em>DaFuqBoom</em>, whose channel is now called “Skibidi”, where he is known for 
+          producing the “Skibidi Toilet” series. The name is used on Felix Willmott’s second 
+          channel for scrapped or experimental videos.</p>
+        </div>
+      </div>
 
       <h2>F</h2>
 
-      <img src="image1.png" class="entry-image" alt="Fel1k image">
+      <div class="entry">
+        <img src="image1.png" alt="Fel1k image">
+        <div class="entry-text">
+          <p><strong>Fel1kman</strong> — The main online username used by Felix Willmott.</p>
+        </div>
+      </div>
 
-      <p><strong>Fel1kman</strong> — The main online username used by Felix Willmott.</p>
+      <div class="entry">
+        <img src="gif1.gif" alt="Felix Willmott GIF">
+        <div class="entry-text">
+          <p><strong>Felix Willmott</strong> — A creator based out of Bedford, known for 
+          developing online content, experimenting with digital personas, and maintaining 
+          multiple creative channels under the Fel1kman identity.</p>
+        </div>
+      </div>
 
-      <img src="gif1.gif" class="entry-image" alt="Felix Willmott GIF">
-
-      <p><strong>Felix Willmott</strong> — A creator based out of Bedford, known for 
-      developing online content, experimenting with digital personas, and maintaining 
-      multiple creative channels under the Fel1kman identity.</p>
     </div>
   </body>
 </html>
